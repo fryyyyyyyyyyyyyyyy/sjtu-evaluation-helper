@@ -1,54 +1,101 @@
- # 上海交大教学评价助手
+# 上海交大教学评价助手
 
-  一键完成上海交通大学教学评价，自动选择最高分选项并填充文本框。
+一键完成上海交通大学教学评价，自动选择最高分选项并填充文本框。
 
-  ## 功能特点
+## 功能特点
 
-  ✅ **一键完成** - 点击按钮自动完成所有评价
-  ✅ **智能选择** - 自动选择每题的最高分选项
-  ✅ **自动填充** - 文本框自动填充"无"
-  ✅ **等待加载** - 智能等待表单加载完成
-  ✅ **安全可靠** - 不会自动提交，需手动确认
+✅ **一键完成** - 点击按钮自动完成所有评价  
+✅ **智能选择** - 自动选择每题的最高分选项  
+✅ **自动填充** - 文本框自动填充"无"  
+✅ **等待加载** - 智能等待表单加载完成  
+✅ **安全可靠** - 不会自动提交，需手动确认  
 
-  ## 安装方法
+## 安装方法
 
-  ### 1. 安装油猴扩展
-  - Chrome/Edge: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-  - Firefox: [Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+### 1. 安装油猴扩展
+- Chrome/Edge: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+- Firefox: [Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/)
 
-  ### 2. 安装脚本
-  点击下面的链接安装：
+### 2. 安装脚本
 
-  **[点击安装脚本](https://greasyfork.org/zh-CN/scripts/你的脚本ID)**
+**方式一：通过 Greasy Fork（推荐）**
 
-  或者手动安装：
-  1. 点击 [teaching-evaluation-helper.user.js](https://raw.githubusercontent.com/fryyyyyyyyyyyyyyyy/sjtu-evaluation-help
-  er/main/teaching-evaluation-helper.user.js)
-  2. 油猴会自动弹出安装提示
+点击下面的链接安装：
 
-  ## 使用方法
+**[📥 点击安装脚本](https://greasyfork.org/zh-CN/scripts/579975)**
 
-  1. 打开上海交大教学评价页面
-  2. 点击右下角绿色的"一键评教"按钮
-  3. 等待自动填写完成
-  4. 检查填写内容
-  5. 手动点击"提交"按钮
+**方式二：直接安装**
 
-  ## 注意事项
+点击下面的链接，油猴会自动弹出安装提示：
 
-  - 脚本仅在 `i.sjtu.edu.cn/xspjgl/` 域名下生效
-  - 填写完成后请务必检查内容是否正确
-  - 需要手动点击提交按钮完成评价
-  - 建议首次使用时仔细检查选项是否符合预期
+**[直接安装](https://raw.githubusercontent.com/fryyyyyyyyyyyyyyyy/sjtu-evaluation-helper/main/teaching-evaluation-helper.user.js)**
 
-  ## 隐私说明
+## 使用方法
 
-  本脚本完全在本地运行，不收集、不上传任何个人信息。
+1. 打开上海交大教学评价页面
+2. 点击右下角绿色的"一键评教"按钮
+3. 等待自动填写完成（约 1-2 秒）
+4. **检查填写内容是否正确**
+5. 手动点击"提交"按钮完成评价
 
-  ## 许可证
+## 效果展示
 
-  MIT License
+安装后，评价页面右下角会出现一个绿色的"一键评教"按钮：
 
-  ## 贡献
+- 点击按钮后，脚本会自动选择所有题目的最高分选项
+- 文本框会自动填充"无"
+- 完成后会显示提示信息
+- 你需要手动检查并点击"提交"按钮
 
-  欢迎提交 Issue 和 Pull Request！
+## 注意事项
+
+⚠️ **重要提醒**
+
+- 脚本仅在 `i.sjtu.edu.cn/xspjgl/` 域名下生效
+- 填写完成后**请务必检查内容是否正确**
+- 脚本**不会自动提交**，需要手动点击提交按钮
+- 建议首次使用时仔细检查选项是否符合预期
+- 如果页面结构变化导致脚本失效，请提交 Issue
+
+## 常见问题
+
+**Q: 点击按钮后没有反应？**  
+A: 请等待页面完全加载后再点击按钮，脚本会自动等待表单加载。
+
+**Q: 脚本会自动提交吗？**  
+A: 不会。脚本只负责填写，提交需要你手动点击。
+
+**Q: 脚本安全吗？**  
+A: 完全安全。脚本代码开源，仅在本地运行，不收集任何信息。
+
+**Q: 如何卸载？**  
+A: 打开油猴扩展 → 管理面板 → 找到本脚本 → 点击删除。
+
+## 技术说明
+
+- 脚本通过 `data-dyf` 属性识别最高分选项
+- 使用多种点击方式确保兼容性
+- 支持动态加载的表单
+- 不依赖任何外部库
+
+## 隐私说明
+
+本脚本完全在本地运行，不收集、不上传任何个人信息。所有操作都在你的浏览器中完成。
+
+## 许可证
+
+MIT License
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+如果这个脚本帮到了你，欢迎给个 ⭐ Star！
+
+## 更新日志
+
+### v1.0.0 (2025-05-27)
+- 🎉 首次发布
+- ✅ 自动选择最高分选项
+- ✅ 自动填充文本框
+- ✅ 智能等待表单加载
