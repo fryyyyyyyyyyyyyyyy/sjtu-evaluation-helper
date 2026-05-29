@@ -2,7 +2,7 @@
 // @name         上海交大教学评价助手
 // @name:en      SJTU Teaching Evaluation Helper
 // @namespace    https://github.com/fryyyyyyyyyyyyyyyy/sjtu-evaluation-helper
-// @version      1.0.0
+// @version      1.0.1
 // @description  一键完成上海交通大学教学评价，自动选择最高分选项并填充文本框
 // @description:en  Automatically complete SJTU teaching evaluation with one click
 // @author       Jie Frey
@@ -21,10 +21,10 @@
 
   const isSjtuEvaluationPage =
     location.hostname === "i.sjtu.edu.cn" &&
-    location.pathname.includes("/xspjgl/") &&
-    location.pathname.endsWith("xspj_cxXspjIndex.html");
+    location.pathname.includes("/xspjgl/");
 
   console.log("[Teaching Evaluation Helper] Is evaluation page:", isSjtuEvaluationPage);
+  console.log("[Teaching Evaluation Helper] Current URL:", location.href);
 
   if (!isSjtuEvaluationPage) return;
 
